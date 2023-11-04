@@ -1,0 +1,12 @@
+@startuml
+
+Factory <-> City : You can travel from Factory to City and vice versa
+Factory <- Forest : You can only travel from Forest to the City
+Factory -> Forge : You can only travel from City to Forge
+
+City <-> Forest : You can travel from City to Forest and vice versa
+City <- Forge : You can only travel from Forge to City
+
+Forest <-> Forge : You can travel from Forge to Forest and vice versa
+
+@enduml

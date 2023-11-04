@@ -1,0 +1,28 @@
+@startuml
+Start -> Manual : Player freely moves the robot
+
+'Manual
+Manual -> AutomaticStart : The Player gets to the part where he needs to insert the set of commands for the robot to follow
+Manual -> End : successfully finishes the puzzle
+Manual -> Death : Robot dies
+
+'Automatic
+AutomaticStart -> End : Successfully finishes the puzzle
+AutomaticStart -> Death : Robot dies
+AutomaticStart -> Manual : The Robot goes back to the player freely moving the robot
+
+'Confusion
+note right of Confusion
+The robot can go into a state of confusion if:
+- it hits the dead end
+- not enough commands to go back into manual mode
+- can't do the current instruction
+end note
+loop 2 times
+    AutomaticStart -> Confusion : The robot goes into a state of confusion
+    Confusion -> AutomaticStart : Returns to the beginning and repeats automatic action
+end
+Confusion -> End : Successfully finishes the puzzle
+Confusion -> Death : Robot dies
+Confusion -> Manual : Robot goes back to player freely moving robot
+@enduml
