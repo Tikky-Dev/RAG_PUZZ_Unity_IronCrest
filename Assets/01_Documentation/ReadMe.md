@@ -52,3 +52,18 @@ Robot state flow chart (the PlantUml diagram can be found [here](./UMLDiagrams/R
 
 Over all map design (the PlantUml diagram can be found [here](./UMLDiagrams/))
 ![Map design diagram](./Images/DiagramImage_OverAllMapDesign.png)
+
+## Puzzles
+> 📝 **Puzzle #1 - Tutorial puzzle:** <br>
+> Player finds himself in a destroyed factory room that has one path to the exit.
+> The path to the exit starts strait but soon it curves to the left 2 times and soon after it curves to the right 2 times.
+> After few tiles it curves to the right one last time and goes straight to the exit of the room.
+> <br><br>
+> 💡 **Solution #1 - Tutorial puzzle:** <br>
+> The player should use the ```manual mode``` to navigate to the exit by using the arrow keys.
+
+> 📝 **Puzzle [puzzle id] - [puzzle name]:** <br>
+> [Puzzle setup and explanation]
+> <br><br>
+> 💡 **Solution [puzzle id] - [puzzle name]:** <br>
+> [Puzzle solution and explanation]
